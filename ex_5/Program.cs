@@ -4,13 +4,15 @@
 // https://leetcode.com/problems/two-sum/
 
 Console.Clear();
-int[] nums = new int[]{3, 2, 4};
-int target = 6;
-for(int i = 0; i < 1; i++)
+int[] nums = new int[]{2, 7, 11, 15};
+int target = 9;
+for(int i = 0; i < nums.Length - 1; i++)
 {
+    
     for(int j = 1; j < nums.Length; j++)
     {
-        if(nums[i] + nums[j] == target)
+        
+        if(nums[i] + nums[j] == target && i != j)
         {
             Console.WriteLine($"[{i}, {j}]");
         }
